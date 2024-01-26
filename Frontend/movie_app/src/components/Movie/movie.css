@@ -1,0 +1,12 @@
+.cardStyle{
+    width: "200px";
+    height: "300px";
+    margin: "10px";
+
+}
+
+.imageStyle{
+    width: "100%";
+        height: "70%";
+        object-fit: "cover";
+}

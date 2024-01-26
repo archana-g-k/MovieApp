@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "65b3649490de152cbf46647b"
+  },
+  "id": 6,
+  "last_login": null,
+  "name": "asha",
+  "username": "ashak",
+  "email": "ashak@gmail.com",
+  "password": "pbkdf2_sha256$320000$OqwtMg3AjiR9kiPe8KK7qz$xnzLHoWxMPTIfS1qtT4Ek5biDb7dWWF3o4k6qfnh5+Q=",
+  "is_active": true,
+  "is_staff": false,
+  "is_superuser": false
+}]

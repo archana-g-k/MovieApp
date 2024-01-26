@@ -1,0 +1,296 @@
+[{
+  "_id": {
+    "$oid": "65b033a46289657af24d1a91"
+  },
+  "id": 1,
+  "booking_id": 4,
+  "seat_id": 1
+},
+{
+  "_id": {
+    "$oid": "65b033a46289657af24d1a93"
+  },
+  "id": 2,
+  "booking_id": 4,
+  "seat_id": 2
+},
+{
+  "_id": {
+    "$oid": "65b033a46289657af24d1a95"
+  },
+  "id": 3,
+  "booking_id": 4,
+  "seat_id": 3
+},
+{
+  "_id": {
+    "$oid": "65b033a46289657af24d1a97"
+  },
+  "id": 4,
+  "booking_id": 4,
+  "seat_id": 4
+},
+{
+  "_id": {
+    "$oid": "65b1861f179918295f9ae85b"
+  },
+  "id": 5,
+  "booking_id": 5,
+  "seat_id": 5
+},
+{
+  "_id": {
+    "$oid": "65b1861f179918295f9ae85d"
+  },
+  "id": 6,
+  "booking_id": 5,
+  "seat_id": 6
+},
+{
+  "_id": {
+    "$oid": "65b1861f179918295f9ae85f"
+  },
+  "id": 7,
+  "booking_id": 5,
+  "seat_id": 7
+},
+{
+  "_id": {
+    "$oid": "65b1861f179918295f9ae861"
+  },
+  "id": 8,
+  "booking_id": 5,
+  "seat_id": 8
+},
+{
+  "_id": {
+    "$oid": "65b2ae74cf4f41424bfd931f"
+  },
+  "id": 9,
+  "booking_id": 6,
+  "seat_id": 9
+},
+{
+  "_id": {
+    "$oid": "65b2ae74cf4f41424bfd9321"
+  },
+  "id": 10,
+  "booking_id": 6,
+  "seat_id": 10
+},
+{
+  "_id": {
+    "$oid": "65b2b515cf4f41424bfd9324"
+  },
+  "id": 11,
+  "booking_id": 7,
+  "seat_id": 11
+},
+{
+  "_id": {
+    "$oid": "65b2b515cf4f41424bfd9326"
+  },
+  "id": 12,
+  "booking_id": 7,
+  "seat_id": 12
+},
+{
+  "_id": {
+    "$oid": "65b2b804cf4f41424bfd9329"
+  },
+  "id": 13,
+  "booking_id": 8,
+  "seat_id": 13
+},
+{
+  "_id": {
+    "$oid": "65b2b804cf4f41424bfd932b"
+  },
+  "id": 14,
+  "booking_id": 8,
+  "seat_id": 14
+},
+{
+  "_id": {
+    "$oid": "65b2b804cf4f41424bfd932d"
+  },
+  "id": 15,
+  "booking_id": 8,
+  "seat_id": 15
+},
+{
+  "_id": {
+    "$oid": "65b2b804cf4f41424bfd932f"
+  },
+  "id": 16,
+  "booking_id": 8,
+  "seat_id": 16
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd9333"
+  },
+  "id": 17,
+  "booking_id": 9,
+  "seat_id": 17
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd9336"
+  },
+  "id": 18,
+  "booking_id": 10,
+  "seat_id": 18
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd9337"
+  },
+  "id": 19,
+  "booking_id": 9,
+  "seat_id": 19
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd933a"
+  },
+  "id": 20,
+  "booking_id": 10,
+  "seat_id": 20
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd933b"
+  },
+  "id": 21,
+  "booking_id": 9,
+  "seat_id": 21
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd933e"
+  },
+  "id": 22,
+  "booking_id": 10,
+  "seat_id": 22
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd933f"
+  },
+  "id": 23,
+  "booking_id": 9,
+  "seat_id": 23
+},
+{
+  "_id": {
+    "$oid": "65b2b847cf4f41424bfd9341"
+  },
+  "id": 24,
+  "booking_id": 10,
+  "seat_id": 24
+},
+{
+  "_id": {
+    "$oid": "65b2b96fcf4f41424bfd9344"
+  },
+  "id": 25,
+  "booking_id": 11,
+  "seat_id": 25
+},
+{
+  "_id": {
+    "$oid": "65b2b96fcf4f41424bfd9346"
+  },
+  "id": 26,
+  "booking_id": 11,
+  "seat_id": 26
+},
+{
+  "_id": {
+    "$oid": "65b2b96fcf4f41424bfd9348"
+  },
+  "id": 27,
+  "booking_id": 11,
+  "seat_id": 27
+},
+{
+  "_id": {
+    "$oid": "65b2e09db3f343f32ea69b34"
+  },
+  "id": 28,
+  "booking_id": 12,
+  "seat_id": 28
+},
+{
+  "_id": {
+    "$oid": "65b2e09db3f343f32ea69b36"
+  },
+  "id": 29,
+  "booking_id": 12,
+  "seat_id": 29
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b3b"
+  },
+  "id": 30,
+  "booking_id": 13,
+  "seat_id": 31
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b3d"
+  },
+  "id": 31,
+  "booking_id": 14,
+  "seat_id": 30
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b3f"
+  },
+  "id": 32,
+  "booking_id": 15,
+  "seat_id": 32
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b42"
+  },
+  "id": 33,
+  "booking_id": 14,
+  "seat_id": 34
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b44"
+  },
+  "id": 34,
+  "booking_id": 15,
+  "seat_id": 35
+},
+{
+  "_id": {
+    "$oid": "65b2f395b3f343f32ea69b45"
+  },
+  "id": 35,
+  "booking_id": 13,
+  "seat_id": 33
+},
+{
+  "_id": {
+    "$oid": "65b35e4b6c70ad91f08fe4f3"
+  },
+  "id": 36,
+  "booking_id": 16,
+  "seat_id": 36
+},
+{
+  "_id": {
+    "$oid": "65b35e4b6c70ad91f08fe4f5"
+  },
+  "id": 37,
+  "booking_id": 16,
+  "seat_id": 37
+}]

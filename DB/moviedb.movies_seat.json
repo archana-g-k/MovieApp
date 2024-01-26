@@ -1,0 +1,408 @@
+[{
+  "_id": {
+    "$oid": "65b033a46289657af24d1a90"
+  },
+  "id": 1,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G1",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b033a46289657af24d1a92"
+  },
+  "id": 2,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G2",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b033a46289657af24d1a94"
+  },
+  "id": 3,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G3",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b033a46289657af24d1a96"
+  },
+  "id": 4,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G4",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b1861f179918295f9ae85a"
+  },
+  "id": 5,
+  "theatre_id": 2,
+  "movie_id": 14,
+  "seat_number": "G5",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b1861f179918295f9ae85c"
+  },
+  "id": 6,
+  "theatre_id": 2,
+  "movie_id": 14,
+  "seat_number": "G6",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b1861f179918295f9ae85e"
+  },
+  "id": 7,
+  "theatre_id": 2,
+  "movie_id": 14,
+  "seat_number": "G7",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd9339"
+  },
+  "id": 21,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G3",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd933c"
+  },
+  "id": 22,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G3",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd933d"
+  },
+  "id": 23,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G4",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2b846cf4f41424bfd9340"
+  },
+  "id": 24,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G4",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2b96fcf4f41424bfd9343"
+  },
+  "id": 25,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G1",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2b96fcf4f41424bfd9345"
+  },
+  "id": 26,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G2",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2b96fcf4f41424bfd9347"
+  },
+  "id": 27,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G3",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2e09cb3f343f32ea69b33"
+  },
+  "id": 28,
+  "theatre_id": 6,
+  "movie_id": 14,
+  "seat_number": "G1",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2e09db3f343f32ea69b35"
+  },
+  "id": 29,
+  "theatre_id": 6,
+  "movie_id": 14,
+  "seat_number": "G3",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b39"
+  },
+  "id": 30,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G1",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b3a"
+  },
+  "id": 31,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G1",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b3e"
+  },
+  "id": 32,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G1",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b40"
+  },
+  "id": 34,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G2",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b41"
+  },
+  "id": 33,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G2",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b2f394b3f343f32ea69b43"
+  },
+  "id": 35,
+  "theatre_id": 1,
+  "movie_id": 14,
+  "seat_number": "G2",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b35e4b6c70ad91f08fe4f2"
+  },
+  "id": 36,
+  "theatre_id": 6,
+  "movie_id": 14,
+  "seat_number": "G1",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b35e4b6c70ad91f08fe4f4"
+  },
+  "id": 37,
+  "theatre_id": 6,
+  "movie_id": 14,
+  "seat_number": "G2",
+  "is_reserved": true,
+  "category": "regular",
+  "price": 150,
+  "movie_timing": "120",
+  "user_id": 4,
+  "date": {
+    "$date": "2024-01-24T00:00:00.000Z"
+  }
+}]

@@ -1,0 +1,120 @@
+.font-color{
+color:green
+}
+.small-label {
+  font-size: 12px;
+  color: white;
+}
+
+.text-center{
+  font-size:12px;
+  /*color: white;*/
+}
+.heading-color{
+  color:white
+}
+/* In your CSS file or inline styles */
+.form-check {
+  display: flex;
+  /* Use flexbox to align items in the same row */
+  align-items: center;
+  /* Vertically center the items */
+  font-size:12px;
+  color:blue
+}
+
+.forgot-password-link {
+  margin-left: 300px;
+    color: blue
+  /* Adjust the margin to create a gap between Remember Password and Forgot Password */
+}
+.form-control{
+  font: size 12px;
+}
+.p-4 border shadow w-100{
+  text-align: center;
+  }
+  
+    .btn-primary {
+      background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+      width: 140px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: larger;
+      border-radius: 18px;
+    }
+.display-4{
+  color:white
+}
+.lead{
+  color:white
+}
+.background-image {
+  background-image: url('./film-strip-image.jpg');
+  /* Replace with the path to your background image */
+  background-size: cover;
+  color: white;
+  /* Set text color to white */
+  padding: 20px;
+  /* Add padding for better readability */
+}
+/* BookingPage.css */
+.search-section{
+  display: flex;
+  justify-content: space-between; /* Adjust as needed for spacing between sections */
+  align-items: center; /* Align items vertically in the center */
+  margin-top: 20px; /* Add margin for spacing from the heading */
+}
+
+/* You can add additional styling for each search section if needed */
+.white-text {
+  color: white;
+  font-size:9px;
+}
+.card-title{
+  font-size:12px;
+}
+.movie-title{
+  font-size:20px;
+    color: white;
+}
+/* MovieDetails.css */
+
+.theater-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.theater-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  color:white
+}
+
+.heart-symbol {
+  font-size: 1.2em;
+  margin-right: 5px;
+  
+}
+.btnBookTickets {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.user-profile-icon {
+  width: 30px;
+  /* Adjust the size as needed */
+  height: 30px;
+  margin-right: 10px;
+  /* Adjust the margin as needed */
+}

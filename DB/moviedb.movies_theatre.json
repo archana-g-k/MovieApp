@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "65a7990501ec7fa459fff63e"
+  },
+  "id": 1,
+  "movie_id": 14,
+  "name": "Carnival Cinemas",
+  "address": "Kalyani Nagar-vadgaon Sheri, PuneMarigold Complex, Mariplex Mall, Kalyani Nagar Road, Kalyani Nagar-vadgaon Sheri, Pune - 411014 (Opposite Kalyani Veg Hotel and IndusIand Bank)",
+  "city": "Pune",
+  "pin_code": "411014",
+  "movie_timing": {
+    "$date": "2024-01-16T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a7995801ec7fa459fff640"
+  },
+  "id": 2,
+  "movie_id": 14,
+  "name": "INOX Cinemas",
+  "address": "Hadapsar, Pune2nd Floor, Amanora Park Town Centre, Hadapsar Mundhwa Road, Hadapsa",
+  "city": "Pune",
+  "pin_code": "411028",
+  "movie_timing": {
+    "$date": "2024-01-16T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a79a0301ec7fa459fff644"
+  },
+  "id": 4,
+  "movie_id": 13,
+  "name": "City Pride Multiplex",
+  "address": "Maharshi Nagar, PuneSurvey No 692/693, Adinath Society, Pune Satara Road, Maharshi Nagar",
+  "city": "Pune",
+  "pin_code": "411037",
+  "movie_timing": {
+    "$date": "2024-01-16T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a79a3701ec7fa459fff646"
+  },
+  "id": 5,
+  "movie_id": 8,
+  "name": "Mangala Multiplex",
+  "address": "Shivaji Nagar, PuneSurvey No. 111, Chhatrapati Shivaji Maharaj Road, Shivaji Nagar",
+  "city": "Pune",
+  "pin_code": "411005",
+  "movie_timing": {
+    "$date": "2024-01-16T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a79b6301ec7fa459fff648"
+  },
+  "id": 6,
+  "movie_id": 14,
+  "name": "Neelayam Theatre",
+  "address": "Sadashiv Peth",
+  "city": "Pune",
+  "pin_code": "410040",
+  "movie_timing": {
+    "$date": "2024-01-16T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a79baa01ec7fa459fff64a"
+  },
+  "id": 7,
+  "movie_id": 9,
+  "name": "Laxminarayan Theater",
+  "address": "Parvati, PuneLaxmi Narayan Road",
+  "city": "Pune",
+  "pin_code": "411009",
+  "movie_timing": {
+    "$date": "2024-01-01T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a79bf301ec7fa459fff64c"
+  },
+  "id": 8,
+  "movie_id": 1,
+  "name": "Alka Cinema",
+  "address": "Sadashiv Peth, PuneSurvey No. 8/1, Lal Bahadur Shastri Tilak Road, Sadashiv Peth",
+  "city": "Pune",
+  "pin_code": "411030",
+  "movie_timing": {
+    "$date": "2024-01-01T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a79c2c01ec7fa459fff64e"
+  },
+  "id": 9,
+  "movie_id": 14,
+  "name": "Konark E Square Multiplex",
+  "address": "Kondhwa Khurd, PuneSurvey No 48 Indrayu Mall, Katraj Kondhwa Road, Kondhwa Khurd",
+  "city": "Pune",
+  "pin_code": "411048",
+  "movie_timing": {
+    "$date": "2024-01-01T12:00:00.000Z"
+  }
+}]
