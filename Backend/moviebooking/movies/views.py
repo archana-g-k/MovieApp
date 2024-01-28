@@ -65,6 +65,8 @@ class ActiveDeactive(APIView):
         return Response({'message': 'User active status toggled successfully'}, status=200)
     
 class UpdateSpecificUser(APIView):
+    permission_classes = [IsAuthenticated]
+
     def get_object(self, id):
         try:
             return User.objects.get(id=id)
@@ -85,17 +87,6 @@ class SpecificUserView(APIView):
         
         return Response(serializer)
     
-# class UserDetailsView(APIView):
-#     permission_classes = [IsAuthenticated]
-#     serializer_class = UserSerializer
-
-#     def get_object(self):
-#         return self.request.user
-
-#     def get_serializer_class(self):
-#         if self.request.method == 'PUT':
-#             return UpdateUserSerializer
-#         return UserSerializer
 class MoviesView(APIView):
     def get_permissions(self):
         if self.request.method in ["POST", "DELETE","PUT"]:
@@ -163,6 +154,8 @@ class DeleteMovieAPIView(APIView):
         except Movie.DoesNotExist:
             return Response({'message': 'Movie not found'}, status=status.HTTP_404_NOT_FOUND)
 class UpdateSpecificMovie(APIView):
+    permission_classes=[IsAuthenticated & IsAdminUser]
+
     def get_object(self, movie_id):
         try:
             return Movie.objects.get(id=movie_id)
@@ -254,23 +247,18 @@ class TheatreDetailView(APIView):
         theatre = get_object_or_404(Theatre, movie__id=movie_id)
         serializer = TheatreSerializer(theatre)
         return Response(serializer.data, status=200)    
-# class AddSeatView(APIView):
-#     def post(self,request):
-#         data=request.data
-#         serializer=SeatSerializer(data=data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response({"message":"Seat created successfully"},status=201)
-#         return Response(serializer.errors,status=400)
-    
+   
 class SeatView(APIView):
-  
+    
     def get(self, request, movie_id):
+        permission_classes = [IsAuthenticated]
+
         seats = Seat.objects.filter(movie_id=movie_id)
         seat_list = [{'seat_number': seat.seat_number, 'reserved': seat.reserved} for seat in seats]
         return JsonResponse({'seats': seat_list})
 
     def post(self, request):
+        permission_classes=[IsAuthenticated & IsAdminUser]
         data = json.loads(request.body.decode('utf-8'))
         movie_id = data.get('movie_id')
         seat_number = data.get('seat_number')
@@ -339,74 +327,30 @@ class SeatBookingView(APIView):
 
         return Response({'message': 'Booking created successfully'}, status=status.HTTP_201_CREATED)
 
-# class BookedSeatView(APIView):
-#     def get(self, request, theater_id, movie_id, date, movie_timing):
+class BookedSeatView(APIView):
+    def get(self, request, theater_id, movie_id, date, movie_timing):
+        permission_classes = [IsAuthenticated]
 
-#         queryset = Seat.objects.filter(
-#             theater_id=theater_id,
-#             movie_id=movie_id,
-#             date=date,
-#             movie_timing=movie_timing,
-#             is_reserved=True  # Filter only reserved seats
-#         )
+        queryset = Seat.objects.filter(
+            theater_id=theater_id,
+            movie_id=movie_id,
+            date=date,
+            movie_timing=movie_timing,
+            is_reserved=True  # Filter only reserved seats
+        )
         
-#         # serializer = SeatSerializer(queryset, many=True)
-#         seat_numbers = [seat.seat_number for seat in queryset]
-#         # You can customize the response data here if needed
-#         response_data = {
-#             # 'reserved_seats': serializer.data
-#             'reserved_seat_numbers': seat_numbers
-#         }
+        # serializer = SeatSerializer(queryset, many=True)
+        seat_numbers = [seat.seat_number for seat in queryset]
+        # You can customize the response data here if needed
+        response_data = {
+            # 'reserved_seats': serializer.data
+            'reserved_seat_numbers': seat_numbers
+        }
 
-#         return Response(response_data)
+        return Response(response_data)
     
 
 
-# class BookingDetailsView(APIView):
-#     #permission_classes = [IsAuthenticated]
-#     def get(self, request):
-#         user = request.user
-#         date_param = request.GET.get('date', None)
-#         if date_param is None:
-#             seats = Seat.objects.filter(user_id=user)
-#         else:
-#             seats = Seat.objects.filter(user_id=user, date=date_param).values(
-#                     'id','theatre_id','movie_id','seat_number','is_reserved','category','price','date','movie_timing','user_id')
-#         user_serializer = UserSerializer(user).data
-#         seat_serializer = SeatSerializer(seats, many=True).data
-#         theater_ids = seats.values_list('theatre_id',flat=True).distinct()
-#         theater_id_list = list(theater_ids)
-#         print(theater_ids)
-#         theaters = Theatre.objects.filter(id=theater_id_list[0])
-#         theater_serializer = TheatreSerializer(theaters, many=True).data
-#         # booking=Booking.objects.filter(user_id=user,movie_id=)
-#         # print(booking)
-#         response_data = {
-#             'user_details': user_serializer,
-#             'seat_details': seat_serializer,
-#             'theater_details': theater_serializer,
-#         }
-#         return Response(response_data)
-
-# class TicketBooking(APIView):
-#     def post(self,request):
-#         data=request.data
-#         serializer=BookingSerializer(data=data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response({"message":"Ticket created successfully"},status=201)
-#         return Response(serializer.errors,status=400)
-
-#     def get(self, request):
-#         booking = Booking.objects.all()
-#         serializer = BookingSerializer(booking, many=True).data
-#         return Response(serializer, status=200)
-       
-# class BookingSummary(APIView):
-#     def get(self, request):
-#         bookingSummary = BookingSummary.objects.all()
-#         serializer = BookingSerializer(bookingSummary, many=True).data
-#         return Response(serializer, status=200)
 class UserBookingsView(APIView):
     permission_classes = [IsAuthenticated]
 
