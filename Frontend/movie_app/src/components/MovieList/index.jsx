@@ -2,6 +2,8 @@ import "../../styles.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Movie from "../Movie";
+// import Movie from "./Movie";
+
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
   const getData = () => {

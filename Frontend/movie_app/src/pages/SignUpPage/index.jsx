@@ -51,8 +51,8 @@ const Signup = () => {
           <h3 className="heading-color">TOBOLETO</h3>
 
           <div className="mb-3">
-            <label htmlFor="username" className="form-label">
-              Username:
+            <label htmlFor="username" className="heading-color">
+              USER NAME:
             </label>
             <input
               type="text"
@@ -64,8 +64,8 @@ const Signup = () => {
           </div>
 
           <div className="mb-3">
-            <label htmlFor="name" className="form-label">
-              Name:
+            <label htmlFor="name" className="heading-color">
+              NAME:
             </label>
             <input
               type="text"
@@ -77,8 +77,8 @@ const Signup = () => {
           </div>
 
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">
-              Email:
+            <label htmlFor="email" className="heading-color">
+              EMAIL:
             </label>
             <input
               type="email"
@@ -90,8 +90,8 @@ const Signup = () => {
           </div>
 
           <div className="mb-3">
-            <label htmlFor="password" className="form-label">
-              Password:
+            <label htmlFor="password" className="heading-color">
+              PASSWORD:
             </label>
             <input
               type="password"
@@ -109,7 +109,7 @@ const Signup = () => {
           >
             Sign Up
           </button>
-          <p className="text-center">
+          <p className="heading-color">
             Already have an account?<a href="/signin">Login</a>
           </p>
         </form>

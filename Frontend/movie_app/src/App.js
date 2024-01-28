@@ -6,7 +6,7 @@ import SeatSelectionPage from "./pages/SeatSelectionPage";
 import MovieDetailPage from "./pages/MovieDetailPage";
 import TheatreDetailsPage from "./pages/TheatreDetailsPage";
 import ShowTicketPage from "./pages/ShowTicketPage";
-import ProfilePage from "./pages/ProfilePage";
+import UserProfilePage from "./pages/UserProfilePage";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
 
         <Route path="/movies/detail/:id" element={<MovieDetailPage />} />
         <Route path="/getticket/" element={<ShowTicketPage />} />
-        <Route path="/profile" component={<ProfilePage />} />
+        <Route path="/profile" element={<UserProfilePage />} />
         <Route path="/theatre/:movie_id/" element={<TheatreDetailsPage />} />
         <Route
           path="/theatre/:theaterId/:movieId/seat"

@@ -25,7 +25,7 @@ const Login = () => {
       } else {
         localStorage.setItem("access_token", data.access_token);
         localStorage.setItem("refresh_token", data.refresh_token);
-         alert("Login Successful");
+        alert("Login Successful");
         navigate("/");
       }
     } catch (error) {
@@ -43,7 +43,7 @@ const Login = () => {
           <h9 className="font-color">HELLO</h9>
           <h3 className="heading-color">WELCOME BACK</h3>
           <div className="mb-3">
-            <label htmlFor="username" className="form-label">
+            <label htmlFor="username" className="heading-color">
               USER NAME:
             </label>
             <input
@@ -55,7 +55,7 @@ const Login = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="password" className="form-label">
+            <label htmlFor="password" className="heading-color">
               PASSWORD:
             </label>
             <input
@@ -67,31 +67,16 @@ const Login = () => {
             />
           </div>
 
-          <div className="mb-3 form-check">
-            <input
-              type="checkbox"
-              id="rememberPassword"
-              className="form-check-input"
-              checked={rememberPassword}
-              onChange={() => setRememberPassword(!rememberPassword)}
-            />
-            <label htmlFor="rememberPassword" className="form-check-label">
-              Remember Password
-            </label>
-
-            <a href="/forgot-password" className="forgot-password-link">
-              Forgot Password?
-            </a>
+          <div className="form-container">
+            <button
+              type="submit"
+              className="btn btn-primary"
+              onClick={handleLogin}
+            >
+              Sign In
+            </button>{" "}
           </div>
-
-          <button
-            type="submit"
-            className="btn btn-primary"
-            onClick={handleLogin}
-          >
-            Sign In
-          </button>
-          <p className="text-center">
+          <p className="heading-color">
             Don't have an account?<a href="/signup">Signup Now</a>
           </p>
         </form>

@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -13,12 +13,20 @@ body {
   text-align: center;
 }
 
-.seat-container {
+/* .seat-container {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
   font-display: white;
   text-align: center;
+} */
+
+.seat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  /* Adjust the gap between seat boxes */
 }
 
 .seat {

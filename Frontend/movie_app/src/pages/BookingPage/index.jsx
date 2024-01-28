@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "../../components/Navbar";
 
-const BookingPage = ({ selectedSeats, totalPrice, movieId, theaterId }) => {
+const BookingPage = ({
+  selectedSeats,
+  totalPrice,
+  movieId,
+  theaterId,
+  userId,
+}) => {
   const [movie, setMovie] = useState({});
   const [theater, setTheater] = useState({});
+  const [user, setUser] = useState({});
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
@@ -20,27 +28,44 @@ const BookingPage = ({ selectedSeats, totalPrice, movieId, theaterId }) => {
     const fetchTheaterDetails = async () => {
       try {
         const response = await axios.get(
-          `http://127.0.0.1:8000/api/theatres/${theaterId}/`
+          `http://127.0.0.1:8000/api/theatredetails/${theaterId}/`
         );
         setTheater(response.data);
       } catch (error) {
         console.error("Error fetching theater details:", error);
       }
     };
-
+    const fetchUserDetails = async () => {
+      try {
+        const response = await axios.get(
+          `http://127.0.0.1:8000/api/auth/getuser/${userId}/`
+        );
+        setUser(response.data);
+      } catch (error) {
+        console.error("Error fetching user details:", error);
+      }
+    };
     fetchMovieDetails();
     fetchTheaterDetails();
-  }, [movieId, theaterId]);
+    fetchUserDetails();
+  }, [movieId, theaterId, userId]);
+
   console.log(theater.name);
+
   // Implement your booking page UI and logic here
   return (
-    <div>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <Navbar />
       <h1 style={{ fontSize: "2rem", color: "white" }}>Booking Details</h1>
+      <p style={{ fontSize: "1rem", color: "white" }}>
+        User name: {user.username}
+      </p>
       <p style={{ fontSize: "1rem", color: "white" }}>
         Selected seats: {selectedSeats.join(", ")}
       </p>
+
       <p style={{ fontSize: "1rem", color: "white" }}>
-        Total Price: ${totalPrice}
+        Total Price: Rs.{totalPrice}
       </p>
       {/* Additional booking form and confirmation logic */}
       <p style={{ fontSize: "1rem", color: "white" }}>

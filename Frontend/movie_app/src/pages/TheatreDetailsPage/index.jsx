@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./theatrestyles.css";
 import { useParams, Link } from "react-router-dom";
+import Navbar from "../../components/Navbar";
 
 const Theater = ({ onSelectTheater }) => {
   const params = useParams(); // Destructure both parameters
@@ -50,40 +51,50 @@ const Theater = ({ onSelectTheater }) => {
 
   console.log("Theaters:", theaters);
   const staticMovieTime = "9:00 AM";
+
+  console.log(theaters.movie_timing);
+
   // Render the component only when theaters are available
   return (
-    <div className="theater-selection-container">
-      <h2>Select a Theater</h2>
-      {theaters.length > 0 ? (
-        <ul>
-          {theaters.map((theater) => (
-            <li
-              key={theater.id}
-              className="theater-item"
-              style={{
-                marginBottom: "20px", // Adjust the spacing as needed
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <span className="heart-symbol">❤</span>
-              <strong>
-                <Link
-                  to={`/seat/${movieId}/${theater.id}`}
-                  className="theater-link"
-                  style={{ marginLeft: "10px" }} // Adjust the spacing between symbol and theater name
-                >
-                  {theater.name}
-                </Link>
-              </strong>
-              <p style={{ marginLeft: "10px" }}>{staticMovieTime}</p>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <div>No theaters available.</div>
-      )}
-    </div>
+    <>
+      <Navbar />
+      <div className="theater-selection-container">
+        <h2 className="heading-color">Select a Theater</h2>
+        {theaters.length > 0 ? (
+          <ul>
+            {theaters.map((theater) => (
+              <li
+                key={theater.id}
+                className="theater-item"
+                style={{
+                  marginBottom: "20px", // Adjust the spacing as needed
+                  display: "flex",
+                  alignItems: "center",
+                  backGround: "green",
+                }}
+              >
+                <span className="heart-symbol">❤</span>
+                <strong>
+                  <Link
+                    to={`/seat/${movieId}/${theater.id}`}
+                    className="theater-link"
+                    style={{ marginLeft: "10px" }} // Adjust the spacing between symbol and theater name
+                  >
+                    {theater.name}
+                  </Link>
+                </strong>
+                <p style={{ marginLeft: "10px" }}>
+                  Movie Timing:{" "}
+                  {new Date(theater.movie_timing).toLocaleTimeString()}
+                </p>{" "}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div>No theaters available.</div>
+        )}
+      </div>
+    </>
   );
 };
 

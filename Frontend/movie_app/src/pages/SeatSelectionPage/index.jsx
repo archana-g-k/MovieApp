@@ -4,6 +4,8 @@ import Seat from "../../components/Seat";
 import BookingPage from "../BookingPage";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import Navbar from "../../components/Navbar";
+
 const SeatPage = () => {
   const params = useParams();
   const movieId = params.movieId;
@@ -14,7 +16,10 @@ const SeatPage = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [currentDateTime, setCurrentDateTime] = useState("");
   const [totalPrice, setTotalPrice] = useState(0);
-  const [isProceedClicked, setIsProceedClicked] = useState(false); // Track if the Proceed button is clicked
+  const [isProceedClicked, setIsProceedClicked] = useState(false);
+  const [userId, setUserId] = useState("");
+
+  // Track if the Proceed button is clicked
   const seatPrice = 150;
   const handleSeatClick = (seatId) => {
     // Toggle seat selection
@@ -92,8 +97,20 @@ const SeatPage = () => {
     console.log("Total price:", totalPrice);
     const access_token = localStorage.getItem("access_token");
     console.log("Token:", access_token);
+    const tokenParts = access_token.split(".");
+    const encodedPayload = tokenParts[1];
 
+    // Decode the Base64-encoded payload
+    const decodedPayload = atob(encodedPayload);
+
+    // Parse the decoded payload as JSON
+    const payloadObject = JSON.parse(decodedPayload);
+    console.log("Payload", payloadObject);
+    // Now you can access the username from the payload
+    setUserId(payloadObject.user_id);
     console.log("Booking Details to be Sent to Server:");
+    console.log("User ID:", userId); // Replace with actual theater ID
+
     console.log("Theater ID:", theaterId); // Replace with actual theater ID
     console.log("Selected Seats:", selectedSeats);
     console.log("Category:", "regular"); // Replace with actual category
@@ -126,7 +143,9 @@ const SeatPage = () => {
 
       if (response.ok) {
         const data = await response.json();
+        console.log(data);
         console.log("Booking created successfully:", data);
+        alert("Booking created successfully:");
         setIsProceedClicked(true);
       } else {
         console.error("Failed to create booking");
@@ -140,6 +159,8 @@ const SeatPage = () => {
 
   // Render BookingPage if Proceed button is clicked
   if (isProceedClicked) {
+    // console.log(theaterId);
+
     return (
       <BookingPage
         selectedSeats={selectedSeats}
@@ -149,25 +170,44 @@ const SeatPage = () => {
         Number
         of
         tickets={selectedSeats.length}
+        userId={userId}
       />
     );
   }
   return (
     <div>
-      <h1>SCREEN</h1>
-      <p className="white-text">{currentDateTime}</p>
+      <Navbar />
+      <h1
+        style={{ color: "white", display: "flex", justifyContent: "center" }}
+        className="heading-color"
+      >
+        SCREEN
+      </h1>
+      <p
+        style={{
+          fontSize: "16px",
+          color: "white",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        {currentDateTime}
+      </p>
       <div className="seat-container">{renderSeats()}</div>
 
       {selectedSeats.length > 0 && (
-        <div>
-          <p className="white-text">
+        <div className="selected-seats-section">
+          <p className="selected-seats-text">
             You have chosen the seats:{selectedSeats.join(", ")}
           </p>
-          <p className="white-text">Total Price: ${totalPrice}</p>
+          <p className="total-price-text">Total Price: Rs.{totalPrice}</p>
         </div>
       )}
-
-      <button onClick={handleBooking}>Proceed</button>
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}
+      >
+        <button onClick={handleBooking}>Proceed</button>
+      </div>
     </div>
   );
 };

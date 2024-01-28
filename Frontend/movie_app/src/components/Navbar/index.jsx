@@ -43,7 +43,7 @@ const Navbar = () => {
           )}
           <li className="nav-item">
             {loggedIn ? (
-              <Link className="btn btn-danger" onClick={logoutHandler}>
+              <Link to="/" className="btn btn-danger" onClick={logoutHandler}>
                 Signout
               </Link>
             ) : (
